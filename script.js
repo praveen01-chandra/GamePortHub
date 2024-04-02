@@ -1,3 +1,6 @@
+showPopup = () => {
+      
+};
 
 const cardsArr = [
       { name: "img1", img: "images/card1.jpg" },
@@ -13,8 +16,8 @@ const cardsArr = [
       { name: "img6", img: "images/card6.png" },
       { name: "img6", img: "images/card6.png" },
 ];
-let result = document.getElementById("score");
-let move = document.getElementById("move");
+let result = document.querySelector(".score");
+let move = document.querySelector(".move");
 let chosenCard = [];
 let chosenCardIds = [];
 let matchFound = [];
@@ -64,7 +67,7 @@ function flipCard() {
       if (chosenCard.length === 2) {
             setTimeout(checkMatch, 100);
             totalMove++;
-            move.innerText = totalMove;
+            move.innerText = `Total Move ${totalMove}`;
       }
 }
 
@@ -83,10 +86,10 @@ function checkMatch() {
             matchFound.push(chosenCard);
 
             rightGuess++;
-            result.innerText = rightGuess;
+            result.innerText = `Total Score ${rightGuess}`;
             if (rightGuess === cardsArr.length / 2) {
                   document.querySelector(".score").innerText = "you won!";
-                  setTimeout(resetGame,2000)
+                  setTimeout(resetGame, 2000);
             }
       } else {
             setTimeout(() => {
@@ -99,6 +102,7 @@ function checkMatch() {
       chosenCardIds = [];
 }
 
+//This will restart the game immideatly
 const resetButton = document.getElementById("resetButton");
 resetButton.addEventListener("click", resetGame);
 
@@ -110,8 +114,8 @@ function resetGame() {
       totalMove = 0;
       rightGuess = 0;
 
-      move.innerText = totalMove;
-      result.innerText = rightGuess;
+      result.innerText = `Total Score ${rightGuess}`;
+      move.innerText = `Total Move ${totalMove}`;
 
       const cards = document.querySelectorAll("#tempImages img");
       cards.forEach((card) => {

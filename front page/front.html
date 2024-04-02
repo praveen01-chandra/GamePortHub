@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Popup</title>
+  <style>
+    /* Add your styles for the overlay and popup here */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- The overlay and popup -->
+<div class="overlay" id="welcomeOverlay">
+  <div class="popup">
+    <h2>Welcome to My Website!</h2>
+    <p>Do you want to play a game?</p>
+    <button onclick="startGame()">Yes, let's play!</button>
+    <button onclick="closePopup()">No, thanks</button>
+  </div>
+</div>
+
+<!-- The rest of your HTML content -->
+
+<script>
+  // Function to show the popup
+  function showPopup() {
+    document.getElementById('welcomeOverlay').style.display = 'flex';
+  }
+
+  // Function to close the popup
+  function closePopup() {
+    document.getElementById('welcomeOverlay').style.display = 'none';
+  }
+
+  // Function to start the game (you can replace this with your game logic)
+  function startGame() {
+    alert('Game is starting!');
+    // Add your game logic here
+    // ...
+    // Close the popup when the game starts
+    closePopup();
+  }
+
+  // Show the popup when the page loads
+  window.onload = showPopup;
+</script>
+
+</body>
+</html>
