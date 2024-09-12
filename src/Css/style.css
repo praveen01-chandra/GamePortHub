@@ -1,0 +1,97 @@
+/* npx tailwindcss -i ./src/Css/input.css -o ./src/Css/output.css --watch */
+
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-align: justify;
+      font-weight: 400;
+}
+
+h2{
+        font-size: 26px !important;
+        line-height: 42px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        width: 100%;
+        background: rgb(209, 209, 211);
+        display: flex;
+        justify-content: center;
+        font-weight: 700 !important;
+}
+
+h3{
+        font-size: 20px !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 4px 0;
+        font-weight: 700 !important;
+        letter-spacing: 1px;
+}
+
+button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      color: white !important;
+      background-color: #050505 !important;
+      transition: 1s ease-in-out;
+}
+
+button:hover {
+      background-color: white !important;
+      color: black !important;
+}
+
+.border {
+      border: black;
+      border-radius: 0.5rem;
+}
+
+.selectGameCard {
+      background-color: rgb(218, 230, 218);
+      padding: 10px;
+      min-height: 384px;
+}
+
+@media (max-width: 1500px) {
+      .selectGameCard {
+            width: 250px !important;
+      }
+}
+
+@media (max-width: 1320px) {
+      .selectGameCard {
+            width: 208px !important;
+      }
+}
+
+@media (max-width: 1200px) {
+      .selectGameCard {
+            width: 190px !important;
+      }
+}
+
+@media (max-width: 1024px) {
+      .selectGameCard {
+            width: 235px !important;
+      }
+}
+
+@media (max-width: 800px) {
+      .selectGameCard {
+            width: 45% !important;
+      }
+}
+
+@media (max-width: 520px) {
+      .selectGameCard {
+            width: 100% !important;
+      }
+}
+
+/* trending */
+
+.trendingGames {
+}
