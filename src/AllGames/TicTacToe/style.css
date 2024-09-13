@@ -1,0 +1,211 @@
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgb(255, 255, 255);
+}
+
+.game {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(107, 163, 212);
+}
+
+.overallscore {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      color: black;
+}
+
+.countUpdate {
+      display: flex;
+}
+
+.name {
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      margin: 30px;
+      padding: 3px;
+      color: red;
+      border-bottom: 4px solid gold;
+}
+
+.scoreCount {
+      background-color: #bca0a0;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 1ch;
+      padding: 10px 20px;
+      font-size: 23px;
+}
+
+#squares {
+      height: 309px;
+      width: 315px;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 30px;
+      justify-content: center;
+}
+
+#Winner {
+      color: rgb(54, 54, 51);
+      font-size: 25px;
+      text-transform: uppercase;
+}
+
+.square {
+      height: 100px;
+      width: 100px;
+      border: 3px solid #ffffff;
+      background-color: rgb(158, 157, 249);
+      font-size: 60px;
+      color: rgb(241, 1, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+}
+
+.square:hover {
+      background-color: rgb(209, 136, 136);
+}
+
+.selectlevel {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(219, 214, 214);
+      height: 600px;
+      width: 600px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      margin: 20px;
+}
+
+.lvl {
+      height: 50px;
+      width: 100px;
+      background-color: rgb(50, 51, 53);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      cursor: grab;
+      color: goldenrod;
+      font-size: 22px;
+      font-weight: 500;
+      border-radius: 1ch;
+}
+
+.lvl:hover {
+      border: 2px solid gold;
+}
+
+.leveltext {
+      display: flex;
+      justify-content: center;
+      color: rgb(222, 21, 21);
+      font-size: 30px;
+      font-weight: 500;
+      border-bottom: 2px solid rgb(3, 3, 3);
+      width: 300px;
+}
+
+.vslvl {
+      width: 150px;
+}
+
+.createpopup {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(6, 6, 6, 0.6);
+}
+
+.resetgame {
+      height: 40px;
+      width: 200px;
+      border: black 2px solid;
+      background-color: black;
+      font-size: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      color: gold;
+      padding-top: 7px;
+}
+
+.lvlselection {
+      display: flex;
+      margin: 20px;
+      padding-bottom: 20px;
+}
+
+#textSelectLevel{
+      color: red;
+}
+
+@media (max-width: 720px) {
+      .square {
+            height: 50px;
+            width: 50px;
+            font-size: 40px;
+      }
+
+      #squares{
+            height: 160px;
+            width: 175px;
+      }
+
+      .resetgame{
+            width: 120px;
+      }
+
+      .countUpdate {
+            flex-direction: column;
+      }
+      .scoreCount {
+            background-color: #bca0a0;
+            padding: 10px;
+            border-radius: 1ch;
+            padding: 10px 20px;
+            font-size: 18px;
+      }
+
+      .name{
+            font-size: 25px;
+      }
+
+      .selectlevel{
+            width: 80vw;
+            height: 70vh;
+      }
+
+      .leveltext{
+            font-size: 20px;
+      }
+
+      .vslvl{
+            width: 100px;
+      }
+
+      .lvl{
+            height: 40px;
+            font-size: 16px;
+      }
+}
+
