@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDR4JSSFW5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WDR4JSSFW5');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GamePortHub - Play Free Online Games | The Ultimate Gaming Platform</title>
@@ -36,7 +45,7 @@
     </div>
   </div>
   <section class="selectGame w-screen p-4 lg:flex items-center h-auto  bg-gray-200">
-    <section class="allGame w-full lg:w-8/12 border-r-2 border-black">
+    <section class="allGame w-full lg:w-8/12 lg:border-r-2 lg:border-black">
       <div class="selectGame flex flex-wrap md:flex-row justify-center border mr-0 lg:mr-4 p-4">
 
         <!-- playgame cards  -->
@@ -46,8 +55,31 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti sint sit reprehenderit
             eaque
             fugit provident quam ullam voluptatum ut.</p>
-          <button class=" border mt-6 p-1 text-xl font-bold"><a href="./AllGames/MemoryGame/index.html"
-              target="_blank">Play Now</a></button>
+          <a href="./AllGames/MemoryGame/index.html" target="_blank">
+            <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          </a>
+        </div>
+
+        <div class="selectGameCard w-3/12 border-2 rounded-xl border-red-400 mr-4 mb-4">
+          <div class="img h-28 w-full bg-white border mb-6"></div>
+          <h3 class="border-b-2 border-amber-950">Rock Paper Scissor</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti sint sit reprehenderit
+            eaque
+            fugit provident quam ullam voluptatum ut.</p>
+          <a href="./AllGames/Rock-paper_scissor/index.html" target="_blank">
+            <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          </a>
+        </div>
+
+        <div class="selectGameCard w-3/12 border-2 rounded-xl border-red-400 mr-4 mb-4">
+          <div class="img h-28 w-full bg-white border mb-6"></div>
+          <h3 class="border-b-2 border-amber-950">Tic Tac Toe</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti sint sit reprehenderit
+            eaque
+            fugit provident quam ullam voluptatum ut.</p>
+          <a href="./AllGames/Tic-Tac-Toe/index.html" target="_blank">
+            <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          </a>
         </div>
 
         <div class="selectGameCard w-3/12 border-2 rounded-xl border-red-400 mr-4 mb-4">
@@ -56,7 +88,9 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti sint sit reprehenderit
             eaque
             fugit provident quam ullam voluptatum ut.</p>
-          <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          <a href="./AllGames/Rock-paper_scissor/index.html" target="_blank">
+            <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          </a>
         </div>
 
         <div class="selectGameCard w-3/12 border-2 rounded-xl border-red-400 mr-4 mb-4">
@@ -65,7 +99,9 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti sint sit reprehenderit
             eaque
             fugit provident quam ullam voluptatum ut.</p>
-          <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          <a href="./AllGames/Rock-paper_scissor/index.html" target="_blank">
+            <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          </a>
         </div>
 
         <div class="selectGameCard w-3/12 border-2 rounded-xl border-red-400 mr-4 mb-4">
@@ -74,32 +110,18 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti sint sit reprehenderit
             eaque
             fugit provident quam ullam voluptatum ut.</p>
-          <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
-        </div>
-
-        <div class="selectGameCard w-3/12 border-2 rounded-xl border-red-400 mr-4 mb-4">
-          <div class="img h-28 w-full bg-white border mb-6"></div>
-          <h3 class="border-b-2 border-amber-950">Memory Game</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti sint sit reprehenderit
-            eaque
-            fugit provident quam ullam voluptatum ut.</p>
-          <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
-        </div>
-
-        <div class="selectGameCard w-3/12 border-2 rounded-xl border-red-400 mr-4 mb-4">
-          <div class="img h-28 w-full bg-white border mb-6"></div>
-          <h3 class="border-b-2 border-amber-950">Memory Game</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti sint sit reprehenderit
-            eaque
-            fugit provident quam ullam voluptatum ut.</p>
-          <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          <a href="./AllGames/Rock-paper_scissor/index.html" target="_blank">
+            <button class=" border mt-6 p-1 text-xl font-bold">Play Now</button>
+          </a>
         </div>
 
 
       </div>
     </section>
     <section class="trending w-full lg:w-4/12 h-auto p-0 lg:p-10">
-      <div class=" mb-4"><h2>Trending Game</h2></div>
+      <div class=" mb-4">
+        <h2>Trending Game</h2>
+      </div>
       <div class="trendingGames">
         <div class="gameTrend flex justify-center h-auto w-full mb-4">
           <div class="img h-52 bg-white w-4/12 mr-4"></div>
@@ -109,8 +131,8 @@
             <button class="text-xl p-1 font-bold mt-3">Play Now</button>
           </div>
         </div>
-        
-        
+
+
         <div class="gameTrend flex justify-center h-auto w-full mb-4">
           <div class="img h-52 bg-white w-4/12 mr-4"></div>
           <div class="w-7/12 h-52">
@@ -119,8 +141,8 @@
             <button class="text-xl p-1 font-bold mt-3">Play Now</button>
           </div>
         </div>
-        
-        
+
+
         <div class="gameTrend flex justify-center h-auto w-full mb-4">
           <div class="img h-52 bg-white w-4/12 mr-4"></div>
           <div class="w-7/12 h-52">
@@ -129,8 +151,8 @@
             <button class="text-xl p-1 font-bold mt-3">Play Now</button>
           </div>
         </div>
-        
-        
+
+
 
       </div>
     </section>

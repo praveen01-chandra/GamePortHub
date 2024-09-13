@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDR4JSSFW5"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'G-WDR4JSSFW5');
+        </script>
+        <title>Rock Paper Scissors - Play the Classic Game Online</title>
+        <meta name="description"
+                content="Experience the thrill of Rock Paper Scissors at GamePortHub. Play against the computer or friends in this quick and exciting game. Instant fun, no download required!">
+        <meta name="keywords"
+                content="Rock Paper Scissors, online Rock Paper Scissors, quick games, classic games, multiplayer">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="game">
+                <div class="gameborder">
+                        <button class="button" id="button">Start</button>
+                        <div class="movesleft">Moves Left: <span id="moveLeft">10</span></div>
+                        <div class="playerchoice">Player Choise: <span id="playerChoice"></span></div>
+                        <div class="computerchoice">Computer Choise: <span id="computerChoice"></span></div>
+                        <div class="result">Result: <span id="result"></span></div>
+                        <div class="btn" id="btn">
+                                <input class="userInput" type="button" value="Rock">
+                                <input class="userInput" type="button" value="Paper">
+                                <input class="userInput" type="button" value="Scissor">
+                        </div>
+                </div>
+        </div>
+
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>

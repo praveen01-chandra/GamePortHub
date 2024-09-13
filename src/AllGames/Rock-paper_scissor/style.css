@@ -1,0 +1,41 @@
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.game {
+      width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(179 175 175);
+      height: 100vh;
+      font-size: 40px;
+      color: white;
+      font-weight: 700px;
+}
+
+.gameborder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #cd6666;
+      width: 770px;
+      height: 440px;
+}
+
+.btn input {
+      height: 40px;
+      width: 100px;
+      font-size: 20px;
+}
+
+.button {
+      color: red;
+      height: 40px;
+      width: 80px;
+      margin: 10px;
+      font-size: 20px;
+}
