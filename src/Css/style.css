@@ -55,6 +55,7 @@ button:hover {
       min-height: 384px;
 }
 
+
 @media (max-width: 1500px) {
       .selectGameCard {
             width: 250px !important;
