@@ -11,9 +11,9 @@
 
                 gtag('config', 'G-WDR4JSSFW5');
         </script>
-        
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors - Play the Classic Game Online</title>
         <meta name="description"
                 content="Experience the thrill of Rock Paper Scissors at GamePortHub. Play against the computer or friends in this quick and exciting game. Instant fun, no download required!">
@@ -24,16 +24,26 @@
 
 <body>
         <div class="game">
+                <h1>Rock Paper Scissor</h1>
                 <div class="gameborder">
-                        <button class="button" id="button">Start</button>
-                        <div class="movesleft">Moves Left: <span id="moveLeft">10</span></div>
-                        <div class="playerchoice">Player Choise: <span id="playerChoice"></span></div>
-                        <div class="computerchoice">Computer Choise: <span id="computerChoice"></span></div>
-                        <div class="result">Result: <span id="result"></span></div>
+                        <div>
+                                <button class="button" id="button">Start</button>
+                                <a href="../../index.html" target="_blank"><button class="button">Exit</button></a>
+                        </div>
+
+                        <div class="textcontent">
+                                <div class="movesleft inside-text">Moves Left: <span id="moveLeft" class="choices">10</span></div>
+                                <div class="playerchoice inside-text">Player Choise: <span id="playerChoice"
+                                                class="choices"></span></div>
+                                <div class="computerchoice inside-text">Computer Choise: <span id="computerChoice"
+                                                class="choices"> </span></div>
+                                <div class="result inside-text">Result: <span id="result" class="choices"> </span></div>
+                        </div>
+
                         <div class="btn" id="btn">
-                                <input class="userInput" type="button" value="Rock">
-                                <input class="userInput" type="button" value="Paper">
-                                <input class="userInput" type="button" value="Scissor">
+                                <input class="userInput button" type="button" value="Rock">
+                                <input class="userInput button" type="button" value="Paper">
+                                <input class="userInput button" type="button" value="Scissor">
                         </div>
                 </div>
         </div>

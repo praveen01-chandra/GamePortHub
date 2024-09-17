@@ -6,6 +6,7 @@ body {
       box-sizing: border-box;
       text-align: justify;
       font-weight: 400;
+      background-color: #F2F2F2 !important;
 }
 
 h2{
@@ -14,7 +15,7 @@ h2{
         letter-spacing: 1px;
         text-transform: uppercase;
         width: 100%;
-        background: rgb(209, 209, 211);
+        background: #00A3FF;
         display: flex;
         justify-content: center;
         font-weight: 700 !important;
@@ -28,6 +29,7 @@ h3{
         padding: 4px 0;
         font-weight: 700 !important;
         letter-spacing: 1px;
+        color: #002F5E;
 }
 
 button {
@@ -35,12 +37,12 @@ button {
       justify-content: center;
       width: 100%;
       color: white !important;
-      background-color: #050505 !important;
       transition: 1s ease-in-out;
+      background-color: #FF4040 !important;
 }
 
 button:hover {
-      background-color: white !important;
+      background-color: #FF007F !important;
       color: black !important;
 }
 
@@ -50,7 +52,7 @@ button:hover {
 }
 
 .selectGameCard {
-      background-color: rgb(218, 230, 218);
+      background-color: #D4FFB2;
       padding: 10px;
       min-height: 384px;
 }
@@ -84,6 +86,9 @@ button:hover {
       .selectGameCard {
             width: 45% !important;
       }
+      h2{
+            font-size: 18px !important;
+      }
 }
 
 @media (max-width: 520px) {
@@ -93,6 +98,20 @@ button:hover {
 }
 
 /* trending */
+
+.img{
+      background-color: #a2F6F9 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px red solid;
+      border-radius: 15px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-align: center;
+      color: olive;
+}
 
 .trendingGames {
 }

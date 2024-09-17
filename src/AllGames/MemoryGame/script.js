@@ -7,12 +7,12 @@ const cardsArr = [
       { name: "img1", img: "images/card1.jpg" },
       { name: "img2", img: "images/card2.jpg" },
       { name: "img2", img: "images/card2.jpg" },
-      { name: "img3", img: "images/card3.png" },
-      { name: "img3", img: "images/card3.png" },
-      { name: "img4", img: "images/card4.png" },
-      { name: "img4", img: "images/card4.png" },
-      { name: "img5", img: "images/card5.png" },
-      { name: "img5", img: "images/card5.png" },
+      { name: "img3", img: "images/card3.jpg" },
+      { name: "img3", img: "images/card3.jpg" },
+      { name: "img4", img: "images/card4.jpg" },
+      { name: "img4", img: "images/card4.jpg" },
+      { name: "img5", img: "images/card5.jpg" },
+      { name: "img5", img: "images/card5.jpg" },
       { name: "img6", img: "images/card6.png" },
       { name: "img6", img: "images/card6.png" },
 ];
@@ -36,7 +36,7 @@ function game() {
                   //DOM manipulation add element to html
                   const card = document.createElement("img");
                   card.classList.add("img");
-                  card.setAttribute("src", "images/card.png");
+                  card.setAttribute("src", "images/card.jpg");
                   card.id = index;
                   creatImg.append(card);
 
@@ -93,8 +93,8 @@ function checkMatch() {
             }
       } else {
             setTimeout(() => {
-                  card1.setAttribute("src", "images/card.png");
-                  card2.setAttribute("src", "images/card.png");
+                  card1.setAttribute("src", "images/card.jpg");
+                  card2.setAttribute("src", "images/card.jpg");
             }, 1000);
       }
 
@@ -119,7 +119,7 @@ function resetGame() {
 
       const cards = document.querySelectorAll("#tempImages img");
       cards.forEach((card) => {
-            card.setAttribute("src", "images/card.png");
+            card.setAttribute("src", "images/card.jpg");
             card.classList.remove("opa");
             card.addEventListener("click", flipCard);
       });
