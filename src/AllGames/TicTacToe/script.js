@@ -19,11 +19,11 @@ let vsPlayerGame = false;
 
 //------------------select levels--------------------------
 //-----------------Computer Opponent------------------------
-const vsComputer = document.getElementById("computerVs");
-vsComputer.addEventListener("click", () => {
-      const addText = document.getElementById("textSelectLevel");
-      addText.innerText = "Please select A level";
-});
+// const vsComputer = document.getElementById("computerVs");
+// vsComputer.addEventListener("click", () => {
+//       const addText = document.getElementById("textSelectLevel");
+//       addText.innerText = "Please select A level";
+// });
 
 //-----------------Player Opponent------------------------
 

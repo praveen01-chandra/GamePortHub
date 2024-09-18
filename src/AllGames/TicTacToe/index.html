@@ -3,42 +3,45 @@
 
 <head>
         <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDR4JSSFW5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDR4JSSFW5"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
 
-  gtag('config', 'G-WDR4JSSFW5');
-</script>
-
+                gtag('config', 'G-WDR4JSSFW5');
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Play Tic Tac Toe Online - Challenge Your Strategy And Skills</title>
-        <meta name="description" content="Enjoy a classic game of Tic Tac Toe online at GamePortHub. Test your strategy skills against the computer or a friend. Easy, fun, and free to play anytime!">
+        <meta name="description"
+                content="Enjoy a classic game of Tic Tac Toe online at GamePortHub. Test your strategy skills against the computer or a friend. Easy, fun, and free to play anytime!">
         <meta name="keywords" content="Tic Tac Toe, online Tic Tac Toe, strategy game, multiplayer Tic Tac Toe, free games
         ">
         <link rel="stylesheet" href="style.css">
+        <link rel="canonical" href="https://gameporthub.netlify.app/allgames/tictactoe/">
+
 </head>
 
 <body>
 
-            <div class="createpopup">
-                <h1>Tic Tac Toe</h1>
+        <div class="createpopup">
                 <div class="element">
+                        <!-- <h1>Tic Tac Toe</h1> -->
                         <div class="selectlevel">
-                                <div class="leveltext">Select Mode</div>
+                                <div class="leveltext">Play Tic Tac Toe</div>
                                 <div class="lvlselection">
-                                        <div id="computerVs" class="lvl vslvl">VS Computer</div>
-                                        <div id="playerVs" class="lvl vslvl">VS Friend</div>
+                                        <!-- <div id="computerVs" class="lvl vslvl">VS Computer</div> -->
+                                        <div id="playerVs" class="lvl">VS Friend</div>
                                 </div>
                                 <p id="textSelectLevel"></p>
-                                <div class="leveltext">Select Your Level</div>
+                                <div class="leveltext">VS Computer</div>
                                 <div class="lvlselection">
                                         <div id="Easy" class="lvl">Easy</div>
                                         <div id="Medium" class="lvl">Medium</div>
                                         <!-- <div id="Hard" class="lvl lvl-3">Hard</div> -->
-        </div>
-        </div>
-        </div>
+                                </div>
+                        </div>
+                </div>
         </div>
 
         <div class="game">
@@ -46,8 +49,8 @@
                         <div class="name">Tic Tac Toe</div>
                         <div class="countUpdate">
                                 <div class="scoreCount"> Player Score - <span id="playerScore">0</span></div>
-                                <div class="scoreCount"> Tie - <span id="tieScore">0</span></div>
                                 <div class="scoreCount">Computer Score - <span id="computerScore">0</span></div>
+                                <div class="scoreCount"> Tie - <span id="tieScore">0</span></div>
                         </div>
                 </div>
                 <h2>Winner - " <span id="Winner"></span> "</h2>
